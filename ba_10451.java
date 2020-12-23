@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		
+		//백준 10451 - 순열 사이클
 		int t = sc.nextInt();
 		
 		while(t > 0) {
