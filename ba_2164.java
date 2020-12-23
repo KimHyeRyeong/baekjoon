@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
 	
 	public static void main(String[] args) {
-
+		//큐를 이용해서 문제해결하기
 		Queue<Integer> cardlist = new LinkedList<>();
 		Scanner sc = new Scanner(System.in);
 		
