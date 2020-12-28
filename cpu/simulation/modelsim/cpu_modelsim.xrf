@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/user/Desktop/cpu/cpu.v
+source_file = 1, C:/Users/user/Desktop/cpu/decoder.v
+source_file = 1, C:/Users/user/Desktop/cpu/adder.v
+source_file = 1, C:/Users/user/Desktop/cpu/memory.v
+source_file = 1, C:/Users/user/Desktop/cpu/ALU.v
+source_file = 1, C:/Users/user/Desktop/cpu/cpu_tb.v
+source_file = 1, C:/Users/user/Desktop/cpu/register_file.v
+source_file = 1, C:/Users/user/Desktop/cpu/barrel_rotator.v
+source_file = 1, C:/Users/user/Desktop/cpu/barrel_shifter.v
+source_file = 1, C:/Users/user/Desktop/cpu/shift_right.v
+source_file = 1, C:/Users/user/Desktop/cpu/db/cpu.cbx.xml
+source_file = 1, my_program.txt
+design_name = cpu
+instance = comp, \clk~input , clk~input, cpu, 1
+instance = comp, \nRESET~input , nRESET~input, cpu, 1

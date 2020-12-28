@@ -1,0 +1,33 @@
+module decoder(instr, unary, imode, aluop, setcc, rD, rA, rB, imm, wben);
+
+	input[15:0] instr;
+	
+	output unary;
+	output sgned;
+	output imode;
+	output[2:0] aluop;
+	output setcc;
+	output[2:0] rD;
+	output[2:0] rA;
+	output[2:0] rB;
+	output[3:0] imm;
+	output wben;
+	
+	reg unary;
+	reg sgned;
+	reg imode;
+	reg [2:0] aluop;
+	reg setcc;
+	reg [2:0] rD;
+	reg [2:0] rA;
+	reg [2:0] rB;
+	reg [3:0] imm;
+	reg wben;
+	
+	wire [4:0] opcode;
+	
+	assign opcode = instr[4:0];
+	
+	always @(instr)
+	case (opcode)
+		`ADD: 

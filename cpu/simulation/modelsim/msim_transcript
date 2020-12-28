@@ -1,0 +1,120 @@
+# Reading C:/Users/user/Desktop/modelsim_ase/tcl/vsim/pref.tcl 
+# do cpu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\Users\user\Desktop\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\Users\user\Desktop\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/decoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder
+# -- Compiling module input_cell
+# -- Compiling module black_cell
+# -- Compiling module carry_eval_cell
+# 
+# Top level modules:
+# 	adder
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/register_file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_file
+# ** Warning: C:/Users/user/Desktop/cpu/register_file.v(35): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	register_file
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/barrel_rotator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_rotator
+# 
+# Top level modules:
+# 	barrel_rotator
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/barrel_shifter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	barrel_shifter
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/shift_right.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift_right
+# 
+# Top level modules:
+# 	shift_right
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Desktop/cpu {C:/Users/user/Desktop/cpu/cpu_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu_tb
+# 
+# Top level modules:
+# 	cpu_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps cpu_tb 
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.memory
+# Loading work.decoder
+# Loading work.register_file
+# Loading work.ALU
+# Loading work.barrel_shifter
+# Loading work.adder
+# Loading work.input_cell
+# Loading work.black_cell
+# Loading work.carry_eval_cell
+# Loading work.shift_right
+# Loading work.barrel_rotator
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : C:/Users/user/Desktop/cpu/cpu_tb.v(21)
+#    Time: 50010 ns  Iteration: 0  Instance: /cpu_tb
+add wave -position insertpoint sim:/cpu_tb/icpu/*
+add wave -position insertpoint  \
+sim:/cpu_tb/icpu/ireg_file/reg_0 \
+sim:/cpu_tb/icpu/ireg_file/reg_1 \
+sim:/cpu_tb/icpu/ireg_file/reg_2 \
+sim:/cpu_tb/icpu/ireg_file/reg_3 \
+sim:/cpu_tb/icpu/ireg_file/reg_4 \
+sim:/cpu_tb/icpu/ireg_file/reg_5 \
+sim:/cpu_tb/icpu/ireg_file/reg_6
+# 1
+# Break in Module cpu_tb at C:/Users/user/Desktop/cpu/cpu_tb.v line 21
+# Simulation Breakpoint: 1
+# Break in Module cpu_tb at C:/Users/user/Desktop/cpu/cpu_tb.v line 21
+# MACRO ./cpu_run_msim_rtl_verilog.do PAUSED at line 25
+restart
+restart
+run
